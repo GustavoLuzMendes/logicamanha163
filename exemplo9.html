@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Exemplo 8</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./CSS/exemplo9.css">
+    </head>
+    <body>
+        <div>
+            <h1>Bem Vindo ao Jogo do Numero Secreto</h1>
+            <p class="primeiroParagrafo">DIGITE O SEU PALPITE</p>
+
+            <input id="palpite" type="number" placeholder="Palpite: ">
+            <button onclick="verificarPalpite()">Novo Palpite</button>
+            <button onclick="iniciarJogo()">Novo Jogo</button>
+        </div>
+
+        <div>
+             <p id="textoDivImagem">Iniciando o Jogo ....</p>
+            <div id ="campoImagem"></div>
+        </div>
+
+        <script src="./JS/exemplo9.js"></script>
+    </body>
+</html>
