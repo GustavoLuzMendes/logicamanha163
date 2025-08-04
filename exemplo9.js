@@ -35,6 +35,7 @@ function verificarPalpite() {
             } else if (tentativas === 4) {
                 document.getElementById("textoDivImagem").innerText = "Quantidade de Palpites Excedidos. Reinicie seu jogo"
                 document.getElementById("campoImagem").innerHTML = '<iframe src="https://giphy.com/embed/ehOWm8vxKMcZeEvveE" width="480" height="480" style="border-radius: 12px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>'
+                window.location.reload();
                 //iniciarJogo();
             } else {
                 palpiteRepetido.push(numeroUsuario)
@@ -51,5 +52,6 @@ function verificarPalpite() {
             }
         }
 }
+
 
 window.onload = iniciarJogo;
